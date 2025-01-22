@@ -10,3 +10,5 @@ I tested 2 approaches: Calculating the Angle between joints or Calculating the w
 + If angle > threshold then a person is falling
 + If w > h * threshold then a person is falling
 + ![image](https://github.com/user-attachments/assets/762471b2-d812-4971-9d63-dc07c938bb69)
+
+I decided to work with Pose Estimation's second approach: measure width and height. But sometimes there are weird ways to fall so adding an Optical Flow Approach to decide if a person action changed dramatically.
