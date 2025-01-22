@@ -11,4 +11,10 @@ I tested 2 approaches: Calculating the Angle between joints or Calculating the w
 + If w > h * threshold then a person is falling
 + ![image](https://github.com/user-attachments/assets/762471b2-d812-4971-9d63-dc07c938bb69)
 
-I decided to work with Pose Estimation's second approach: measure width and height. But sometimes there are weird ways to fall so adding an Optical Flow Approach to decide if a person action changed dramatically.
+I decided to work with Pose Estimation's second approach: measure width and height. But sometimes there are weird ways to fall so adding an 'Optical Flow' Approach to decide if a person action changed dramatically.
+
+Inside the main.ipynb there are 4 solutions to this matter
+1. Pose Estimation to calculate the angle  
+2. Pose Estimation to calculate width and height  (Choosen)
+3. YOLO trained on custom datasets and detect 'fallen', 'sit' or 'stable' person  (Choosen)
+4. Load pretrained YOLOv11 to detect human, then apply width and height algorithm to decide a fallen person
